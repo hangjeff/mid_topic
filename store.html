@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>門市資訊　|　Web Page</title>
+    <link href="https://media.istockphoto.com/id/1325476278/photo/piece-of-birthday-cake-with-icing-and-candle-3d-render-illustration.jpg?s=2048x2048&w=is&k=20&c=wzWxaI7y1QYtRneNz3YsSAykL1iaOPmrkDef3H2Kub8=" rel="shortcut icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Noto+Sans+TC:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./source/style.css">
+    <style>
+        .menu {
+            width: 10%;
+            background-color: rgba(237, 231, 225, 0.3);
+            top: -10%;
+            text-align: center;
+        }
+        
+        .menu > ul, .menu-item{
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+        }
+        .menu-item {
+            width: 100%;
+            list-style: none;
+            font-size: 20px;
+            margin-bottom: 5px;
+            border: 0;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+        }
+        .menu-item:hover{
+            background-color: rgba(128, 0, 128, 0.8);
+        }
+
+        .content-num {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu-content:hover{
+            background-color: rgba(237, 231, 225, 0.8);
+            color: purple;
+        }
+        .menu-content{
+            margin-left: 10%;
+            background-color: rgba(237, 231, 225, 0.3);
+        }
+
+        .active{
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="float-left purple-shadow none-purple-shadow"><a href="index.html" class="transition-time">La
+                    Soleil |
+                    首頁</a></h1>
+            <nav class="float-right">
+                <ul>
+                    <li class="float-right"><a href="about.html" class="transition-time">關於我們</a></li>
+                    <li class="float-right"><a href="product.html" class="transition-time">產品列表</a></li>
+                    <li class="float-right"><a href="store.html" class="transition-time">門市資訊</a></li>
+                    <li class="float-right"><a href="contact.html" class="transition-time">購物車</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bg-gray breadcrumb">
+        <div class="container">
+            <ol>
+                <li class="float-left"><a href="index.html">首頁</a></li>
+                <li class="float-left">門市資訊</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="purple-shadow">門市資訊</h2>
+
+        <div class="float-left menu">
+            <h3>列表</h3>
+            <ul>
+                <li class="menu-item" onclick="show_Content(1)">桃園店</li>
+                <li class="menu-item" onclick="show_Content(2)">台中店</li>
+                <li class="menu-item" onclick="show_Content(3)">高雄店</li>
+            </ul>
+        </div>
+
+        <div class="menu-content float-left purple-shadow none-purple-shadow">
+            <div class="content-num">
+                <h3>桃園位置</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.4422533488173!2d121.22219790000001!3d24.985084099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34682183f3fd7995%3A0xd0654fea82cb4cf0!2zMzIw5qGD5ZyS5biC5Lit5aOi5Y2A5paw55Sf6Lev5LqM5q61NDIx6Jmf!5e0!3m2!1szh-TW!2stw!4v1710467078869!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>320桃園市中壢區新生路二段421號</p>
+            </div>
+            <div class="content-num">
+                <h3>台中位置</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.6040248012596!2d120.64844997540249!3d24.15054047839945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9650422ae1%3A0x6dc4009b03c630df!2zNDA45Y-w5Lit5biC5Y2X5bGv5Y2A5YWs55uK6Lev5LqM5q61NTHomZ8xOOaokw!5e0!3m2!1szh-TW!2stw!4v1710467160957!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>408台中市南屯區公益路二段51號</p>
+            </div>
+            <div class="content-num">
+                <h3>高雄位置</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.6852766060533!2d120.29046327535693!3d22.62822487945217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e047cb59c8831%3A0x1dab9ce1e55f8b32!2zODAxNDfpq5jpm4TluILliY3ph5HljYDkuK3mraPlm5vot68yMTHomZ846Jmf5qiT5LmLMQ!5e0!3m2!1szh-TW!2stw!4v1710467270791!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>80147高雄市前金區中正四路211號8號</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        let menuIndex = 1;
+        show_Content(menuIndex);
+        function show_Content(n) {
+            let contentDiv = document.getElementsByClassName("content-num");
+            let menuItem = document.getElementsByClassName("menu-item");
+            for (var i = 0; i < contentDiv.length; i++) {
+                contentDiv[i].style.display = "none";
+                menuItem[i].className = menuItem[i].className.replace(" active", "");
+            }
+            contentDiv[n - 1].style.display = "block";
+            menuItem[n -1].className += " active";
+        }
+    </script>
+    <a href="#" class="pagetop"><i class="fa-solid fa-arrow-up" style="color: purple;"></i></a>
+
+    <footer>
+        <div class="container">
+            <div class="container social-icon">
+                <a class="icon-facebook" href="https://www.facebook.com" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="icon-instagram" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="icon-youtube" href="https://www.youtube.com/" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a class="icon-youtube" href="https://twitter.com/" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p>copyright &copy; 版權所有. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

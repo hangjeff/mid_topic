@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    background: black url("https://archive.is/Rd93t/bfab6df279233e0a936145feaa81d147fd93cec2.jpg") no-repeat fixed center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: rgba(0,0,0, 0.3);
+}
+
+header>.container {
+    height: 100%;
+    line-height: 46.4px;
+}
+
+.pagetop{
+    position: fixed; /* 固定定位 */
+    display: block;  /* 塊級元素 */
+    right: 20px;
+    bottom: 20px;
+    /* top right bottom left */
+    width: 50px;
+    height: 50px;
+    background-color: rgba(237, 231, 225, 0.2);
+    text-align: center;
+    line-height: 50px; /* 行高 150% 180%*/
+    text-decoration: none;
+    color:white;
+    border-radius: 50%;
+    
+}
+
+h1 {
+    margin: 0;
+    
+}
+h1>a{
+    color: white;
+}
+h1>a:hover {
+    color: purple;
+}
+h2{
+    text-align: center;
+}
+
+/* function area*/
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.purple-shadow{
+    text-shadow: purple 0.1em 0.1em 0.2em;
+}
+.none-purple-shadow:hover{
+    text-shadow: none;
+}
+.transition-time{
+    transition: color 0.2s ease;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+/**/
+
+.container {
+    width: 80%;
+    /* 寬度 */
+    max-width: 1170px;
+    /* 最大寬度 */
+    margin: auto;
+    /* 外邊界:自動 */
+}
+
+/* ::before */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    width: 60%;
+}
+
+nav>ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+nav>ul>li {
+    width: 25%;
+}
+
+nav>ul>li>a {
+    display: block;
+    line-height: 46.4px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav>ul>li>a:hover {
+    color: purple;
+    background-color: lightgray;
+}
+
+
+.breadcrumb{
+    background-color: rgba(237, 231, 225, 0.3);
+    font-size: 25px;
+}
+.breadcrumb ol{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+/* 後代 相鄰 偽類 */
+.breadcrumb ol li+li::before{
+    content: "\00a0>\00a0";
+}
+.breadcrumb a{
+    color:gray;
+    text-decoration: none;
+}
+.breadcrumb a:hover{
+    color:purple;
+}
+
+.product:hover {
+    background-color: rgba(237, 231, 225, 0.8);
+
+    .tag {
+        background-color: rgb(255, 192, 203);
+        color: white;
+    }
+}
+
+.product {
+    width: 25%;
+    background-color: rgba(237, 231, 225, 0.3);
+    /* border:1px solid black; */
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .product {
+        width: 100%;
+    }
+}
+
+.product-img{
+    width: 100%;
+    height: 230px;
+}
+
+.tag {
+    right: -25px;
+    top: -25px;
+    background-color: purple;
+    color: black;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    /* padding: 10px; */
+    font-size: 12px;
+}
+
+footer{
+    padding: 30px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.3);
+    text-align: center;
+}
